@@ -1,3 +1,4 @@
+
 package graph;
 
 import java.util.ArrayList;
@@ -11,7 +12,7 @@ public class SSSP {
 	/*
 	 * O(ElogV)
 	 */
-	int dijkstra(int S, int T) {
+	static int dijkstra(int S, int T) {
 		int dist[] = new int[V];
 		Arrays.fill(dist, INF);
 		PriorityQueue<Pair> pq = new PriorityQueue<Pair>();
@@ -29,6 +30,7 @@ public class SSSP {
 		return -1;
 
 	}
+
 
 	/*
 	 * O(EV)

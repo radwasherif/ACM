@@ -26,7 +26,7 @@ public class IlyaAndTicTacToeGame_754B {
 			System.out.println("YES");
 			return; 
 		}
-		for(int d = -1; d <= 4; d++) {
+		for(int d =-1; d <= 4; d++) {
 			String s = ""; 
 			for(int i = 0; i < 4; i++) {
 				for(int j = 0; j < 4; j++) {

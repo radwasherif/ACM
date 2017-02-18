@@ -20,7 +20,8 @@ public class DisjointSet {
 	int findSet(int i) {
 		if (p[i] == i)
 			return i;
-		return p[i] = findSet(p[i]);
+		return p[i] = findSet(p[i]); // to make all nodes point to the root directly
+		//path compression
 	}
 
 	boolean sameSet(int i, int j) {
